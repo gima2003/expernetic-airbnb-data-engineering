@@ -14,20 +14,32 @@
 - [x] Data validation
 - [x] Data transformation
 - [x] Master dataset creation
-- [ ] Data modeling
+-  [x] Data modeling
+
+
 
 ## Phase 3 - Analytics
-- [ ] EDA
-- [ ] Statistical analysis
+
+- [x] EDA
+- [x] Statistical analysis
+  - [x] Effect sizes
+  - [x] OLS regression
 
 ## Phase 4 - Machine Learning
-- [ ] Price prediction
-- [ ] Clustering
+
+- [x] Revenue prediction
+- [x] Price recommendation model
+- [x] Model comparison
+- [x] Cross validation
+- [x] Residual analysis
+- [ ] Clustering (Optional)
 
 ## Phase 5 - Dashboard
+
 - [ ] Streamlit dashboard
 
 ## Phase 6 - Documentation
+
 - [ ] Final report
 - [ ] README
 - [ ] AI disclosure

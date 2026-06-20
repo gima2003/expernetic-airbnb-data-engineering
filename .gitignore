@@ -11,6 +11,8 @@ data/processed/*
 database/*
 !database/.gitkeep
 
+models/*.pkl
+
 .ipynb_checkpoints/
 
 .env
