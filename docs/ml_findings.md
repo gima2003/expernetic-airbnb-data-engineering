@@ -249,3 +249,45 @@ The residual mean was close to zero, indicating that the model does not exhibit 
 However, several very large residuals were observed, reflecting the presence of extreme revenue outliers within the Airbnb dataset.
 
 These outliers contributed to elevated prediction error variance and cross-validation instability.
+
+
+## Model Comparison
+
+Three regression model families were evaluated for annual Airbnb revenue prediction.
+
+| Model | R² | RMSE | MAE |
+|---------|---------:|---------:|---------:|
+| Linear Regression | 0.021 | 93,814 | 10,056 |
+| Random Forest | 0.168 | 86,481 | 5,974 |
+| Gradient Boosting | 0.530 | 65,012 | 6,746 |
+
+Findings:
+
+- Linear Regression showed very poor predictive performance, indicating that the relationship between the selected features and annual revenue is highly non-linear.
+- Random Forest improved prediction accuracy substantially compared to Linear Regression.
+- Gradient Boosting achieved the highest R² score and lowest RMSE, making it the best-performing model.
+- Therefore, Gradient Boosting was selected as the final model for deployment in the Streamlit dashboard.
+
+## SHAP Explainability
+
+SHAP analysis was applied to the Gradient Boosting revenue prediction model to improve model transparency.
+
+Top Features Identified:
+
+1. Number of Reviews
+2. Price
+3. Review Text Count
+4. Host Experience Years
+5. Superhost Status
+6. Accommodates
+7. Occupancy Rate
+8. Room Type
+9. Neighbourhood
+
+Business Interpretation:
+
+The model places high importance on demand-related variables such as number of reviews and review text count. This suggests that listings with stronger booking and review activity tend to have more predictable revenue patterns.
+
+Price was also a key driver, confirming that nightly pricing strategy directly influences annual revenue. Host experience and Superhost status contributed to the model, indicating that host credibility and operational maturity affect performance.
+
+SHAP improved model interpretability by showing which features most influenced revenue predictions.

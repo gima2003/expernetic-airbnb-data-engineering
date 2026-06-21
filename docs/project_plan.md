@@ -32,7 +32,7 @@
 - [x] Model comparison
 - [x] Cross validation
 - [x] Residual analysis
-- [ ] Clustering (Optional)
+- [x] SHAP explainability
 
 ## Phase 5 - Dashboard
 
