@@ -36,10 +36,10 @@
 
 ## Phase 5 - Dashboard
 
-- [ ] Streamlit dashboard
+- [x] Streamlit dashboard
 
 ## Phase 6 - Documentation
 
 - [ ] Final report
-- [ ] README
-- [ ] AI disclosure
+- [x] README
+- [x] AI disclosure
